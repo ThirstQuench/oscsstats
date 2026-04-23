@@ -1,0 +1,11 @@
+# PyCharm files
+.idea/
+*.iml
+
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Local Data
+stats.json
