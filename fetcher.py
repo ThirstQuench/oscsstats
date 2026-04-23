@@ -30,7 +30,7 @@ def fetch_all():
 
         time.sleep(2)  # Be nice to the API
 
-    with open('data/stats.json', 'w') as f:
+    with open('stats.json', 'w') as f:
         json.dump(results, f, indent=4)
     print("Done!")
 
