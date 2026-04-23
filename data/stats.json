@@ -1,0 +1,83 @@
+{
+    "sunnys": {
+        "rank": 1663,
+        "minutes_streamed": 6143,
+        "avg_viewers": 1220,
+        "max_viewers": 3277,
+        "hours_watched": 124864,
+        "followers": 4504,
+        "followers_total": 119941
+    },
+    "santipulgaz": {
+        "rank": 1477,
+        "minutes_streamed": 6028,
+        "avg_viewers": 1408,
+        "max_viewers": 4996,
+        "hours_watched": 141434,
+        "followers": 3528,
+        "followers_total": 59792
+    },
+    "youngbasedgo": {
+        "rank": 1667,
+        "minutes_streamed": 4938,
+        "avg_viewers": 1466,
+        "max_viewers": 8430,
+        "hours_watched": 120630,
+        "followers": 5963,
+        "followers_total": 64928
+    },
+    "arky": {
+        "rank": 123,
+        "minutes_streamed": 12943,
+        "avg_viewers": 5435,
+        "max_viewers": 12070,
+        "hours_watched": 1172331,
+        "followers": 9849,
+        "followers_total": 440838
+    },
+    "yugi2x": {
+        "rank": 215,
+        "minutes_streamed": 13534,
+        "avg_viewers": 3297,
+        "max_viewers": 9925,
+        "hours_watched": 743759,
+        "followers": 6845,
+        "followers_total": 284878
+    },
+    "nosiiree": {
+        "rank": 3556,
+        "minutes_streamed": 7690,
+        "avg_viewers": 472,
+        "max_viewers": 2699,
+        "hours_watched": 60435,
+        "followers": 1846,
+        "followers_total": 66019
+    },
+    "1jdab1": {
+        "rank": 3907,
+        "minutes_streamed": 7043,
+        "avg_viewers": 459,
+        "max_viewers": 2320,
+        "hours_watched": 53880,
+        "followers": 2269,
+        "followers_total": 29938
+    },
+    "redify": {
+        "rank": 2970,
+        "minutes_streamed": 10065,
+        "avg_viewers": 446,
+        "max_viewers": 2711,
+        "hours_watched": 74782,
+        "followers": 2315,
+        "followers_total": 47170
+    },
+    "bigmonraph": {
+        "rank": 4755,
+        "minutes_streamed": 3997,
+        "avg_viewers": 596,
+        "max_viewers": 7564,
+        "hours_watched": 39697,
+        "followers": 5839,
+        "followers_total": 29843
+    }
+}
