@@ -7,36 +7,24 @@ app = Flask(__name__)
 # ==========================================
 # OSCS ROSTER MASTER DIRECTORY
 # ==========================================
+# The keys here match EXACTLY what comes out of your stats.json
+# If a member's X/Twitter handle is different than their Twitch, change it here.
 
-# Exact X / Twitter Handles
 TWITTER_HANDLES = {
-    "sunny": "sunnysirl",
-    "santi": "santipulgaz",
-    "ybg": "YOUNGBASEDG",
-    "arky": "ArkySZNN",
-    "yugi": "yugi2x",
+    "sunnysirl": "sunnysirl",
+    "santipulgaz": "santipulgaz",
+    "youngbasedg": "YOUNGBASEDG",
+    "arkysznn": "ArkySZNN",
+    "yugi2x": "yugi2x",
     "nosiiree": "Nosiiree",
-    "jdab": "1JDAB1",
-    "redify": "redifyys",
+    "1jdab1": "1JDAB1",
+    "redifyys": "redifyys",
     "bigmonraph": "BigMonRaph"
 }
 
-# Exact Twitch Usernames (Useful if stats.json keys have weird capitalization)
-TWITCH_USERNAMES = {
-    "sunny": "sunnysirl",
-    "santi": "santipulgaz",
-    "ybg": "YOUNGBASEDG",
-    "arky": "ArkySZNN",
-    "yugi": "yugi2x",
-    "nosiiree": "Nosiiree",
-    "jdab": "1JDAB1",
-    "redify": "redifyys",
-    "bigmonraph": "BigMonRaph"
-}
-
-# Future Expansion: YouTube Channel IDs or Handles
+# Empty list ready for when you add YouTube integration
 YOUTUBE_CHANNELS = {
-    # "member_key": "youtube_handle_here"
+    # "sunnysirl": "youtube_id_here"
 }
 
 
@@ -63,13 +51,8 @@ def index():
     members_data = load_stats()
     roster = list(members_data.keys())
 
-    # Passing both the raw data and the custom Twitch names to the frontend
-    return render_template(
-        'index.html',
-        roster=roster,
-        members=members_data,
-        twitch_map=TWITCH_USERNAMES
-    )
+    # We are back to passing exactly what you used the whole time
+    return render_template('index.html', roster=roster, members=members_data)
 
 
 @app.route('/member/<username>')
@@ -82,19 +65,16 @@ def member_profile(username):
 
     member_info = members_data[username]
 
-    # Force lowercase for dictionary lookups to prevent case-sensitivity crashes
+    # Look up the Twitter/YouTube handles using the exact Twitch username
     lookup_key = username.lower()
-
-    # Pull the exact handles from our Master Directory, default to username if missing
     actual_twitter = TWITTER_HANDLES.get(lookup_key, username)
-    actual_twitch = TWITCH_USERNAMES.get(lookup_key, username)
     actual_youtube = YOUTUBE_CHANNELS.get(lookup_key, "")
 
     return render_template(
         'member.html',
-        name=username,
+        name=username,  # The exact Twitch name from stats.json
+        username=username,  # Kept identical to what you've always used
         info=member_info,
-        twitch_handle=actual_twitch,
         twitter_handle=actual_twitter,
         youtube_handle=actual_youtube
     )
