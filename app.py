@@ -7,12 +7,14 @@ app = Flask(__name__)
 # ==========================================
 # X / TWITTER OVERRIDES
 # ==========================================
-# By default, the app assumes their Twitter is the exact same as their Twitch.
-# ONLY put names in this list if their Twitter handle is different.
-# Format: "lowercase_twitch_name": "Actual_Twitter_Handle"
+# By default, the app assumes their Twitter is the exact same as their master key.
+# We map the lowercase master key to their actual X/Twitter handle here.
 
 TWITTER_OVERRIDES = {
-    # "exampletwitch": "ExampleTwitter"
+    "sunnys": "sunnysirl",
+    "youngbasedgo": "YOUNGBASEDG",
+    "arky": "ArkySZNN",
+    "redify": "redifyys"
 }
 
 
