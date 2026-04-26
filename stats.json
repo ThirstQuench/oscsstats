@@ -1,182 +1,83 @@
 {
     "sunnys": {
-        "30d": {
-            "minutes_streamed": 8450,
-            "followers": 1250,
-            "Top Categories": {
-                "Just Chatting": {"hours": 85},
-                "VRChat": {"hours": 40},
-                "Valorant": {"hours": 15}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 95400,
-            "followers": 8400,
-            "Top Categories": {
-                "Just Chatting": {"hours": 750},
-                "VRChat": {"hours": 620},
-                "Minecraft": {"hours": 220}
-            }
-        }
+        "rank": 1443,
+        "minutes_streamed": 8087,
+        "avg_viewers": 1119,
+        "max_viewers": 3277,
+        "hours_watched": 150818,
+        "followers": 4695,
+        "followers_total": 120631
     },
     "santipulgaz": {
-        "30d": {
-            "minutes_streamed": 12200,
-            "followers": 3100,
-            "Top Categories": {
-                "Grand Theft Auto V": {"hours": 110},
-                "Just Chatting": {"hours": 60},
-                "Call of Duty: Warzone": {"hours": 33}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 110500,
-            "followers": 15200,
-            "Top Categories": {
-                "Grand Theft Auto V": {"hours": 950},
-                "Just Chatting": {"hours": 450},
-                "Apex Legends": {"hours": 441}
-            }
-        }
+        "rank": 1307,
+        "minutes_streamed": 7151,
+        "avg_viewers": 1350,
+        "max_viewers": 4996,
+        "hours_watched": 160861,
+        "followers": 3343,
+        "followers_total": 60665
     },
     "youngbasedgo": {
-        "30d": {
-            "minutes_streamed": 6120,
-            "followers": 890,
-            "Top Categories": {
-                "Street Fighter 6": {"hours": 62},
-                "Tekken 8": {"hours": 25},
-                "Just Chatting": {"hours": 15}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 68000,
-            "followers": 5100,
-            "Top Categories": {
-                "Street Fighter 6": {"hours": 580},
-                "Super Smash Bros. Ultimate": {"hours": 310},
-                "Tekken 8": {"hours": 243}
-            }
-        }
+        "rank": 1329,
+        "minutes_streamed": 9792,
+        "avg_viewers": 1010,
+        "max_viewers": 8430,
+        "hours_watched": 164755,
+        "followers": 5695,
+        "followers_total": 65537
     },
     "arky": {
-        "30d": {
-            "minutes_streamed": 15300,
-            "followers": 4200,
-            "Top Categories": {
-                "Valorant": {"hours": 180},
-                "Counter-Strike 2": {"hours": 45},
-                "Just Chatting": {"hours": 30}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 165000,
-            "followers": 28500,
-            "Top Categories": {
-                "Valorant": {"hours": 1850},
-                "Counter-Strike 2": {"hours": 620},
-                "Apex Legends": {"hours": 280}
-            }
-        }
+        "rank": 122,
+        "minutes_streamed": 13417,
+        "avg_viewers": 5102,
+        "max_viewers": 12070,
+        "hours_watched": 1140888,
+        "followers": 9917,
+        "followers_total": 442106
     },
     "yugi2x": {
-        "30d": {
-            "minutes_streamed": 9800,
-            "followers": 1850,
-            "Top Categories": {
-                "League of Legends": {"hours": 120},
-                "Teamfight Tactics": {"hours": 30},
-                "Just Chatting": {"hours": 13}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 105600,
-            "followers": 12300,
-            "Top Categories": {
-                "League of Legends": {"hours": 1100},
-                "Teamfight Tactics": {"hours": 420},
-                "Valorant": {"hours": 240}
-            }
-        }
+        "rank": 219,
+        "minutes_streamed": 15075,
+        "avg_viewers": 3061,
+        "max_viewers": 9925,
+        "hours_watched": 769078,
+        "followers": 6655,
+        "followers_total": 286069
     },
-    "Nosiiree": {
-        "30d": {
-            "minutes_streamed": 7200,
-            "followers": 950,
-            "Top Categories": {
-                "Elden Ring": {"hours": 80},
-                "Dark Souls III": {"hours": 25},
-                "Just Chatting": {"hours": 15}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 82000,
-            "followers": 6700,
-            "Top Categories": {
-                "Elden Ring": {"hours": 650},
-                "Bloodborne": {"hours": 320},
-                "Sekiro: Shadows Die Twice": {"hours": 396}
-            }
-        }
+    "nosiiree": {
+        "rank": 3542,
+        "minutes_streamed": 7972,
+        "avg_viewers": 459,
+        "max_viewers": 2699,
+        "hours_watched": 61002,
+        "followers": 1605,
+        "followers_total": 66122
     },
-    "1JDAB1": {
-        "30d": {
-            "minutes_streamed": 11500,
-            "followers": 2100,
-            "Top Categories": {
-                "Apex Legends": {"hours": 130},
-                "Just Chatting": {"hours": 40},
-                "Overwatch 2": {"hours": 21}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 135000,
-            "followers": 18900,
-            "Top Categories": {
-                "Apex Legends": {"hours": 1400},
-                "Overwatch 2": {"hours": 550},
-                "Valorant": {"hours": 300}
-            }
-        }
+    "1jdab1": {
+        "rank": 2716,
+        "minutes_streamed": 8924,
+        "avg_viewers": 544,
+        "max_viewers": 5641,
+        "hours_watched": 80925,
+        "followers": 2626,
+        "followers_total": 30488
     },
     "redify": {
-        "30d": {
-            "minutes_streamed": 10065,
-            "followers": 2315,
-            "Top Categories": {
-                "Overwatch 2": {"hours": 120},
-                "VRChat": {"hours": 30},
-                "Just Chatting": {"hours": 17}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 37200,
-            "followers": 14500,
-            "Top Categories": {
-                "Overwatch 2": {"hours": 620},
-                "Valorant": {"hours": 400},
-                "VRChat": {"hours": 180}
-            }
-        }
+        "rank": 2965,
+        "minutes_streamed": 9408,
+        "avg_viewers": 473,
+        "max_viewers": 2711,
+        "hours_watched": 74239,
+        "followers": 1920,
+        "followers_total": 47164
     },
-    "BigMonRaph": {
-        "30d": {
-            "minutes_streamed": 5400,
-            "followers": 650,
-            "Top Categories": {
-                "Dead by Daylight": {"hours": 60},
-                "Phasmophobia": {"hours": 20},
-                "Just Chatting": {"hours": 10}
-            }
-        },
-        "1year": {
-            "minutes_streamed": 61000,
-            "followers": 4800,
-            "Top Categories": {
-                "Dead by Daylight": {"hours": 580},
-                "Lethal Company": {"hours": 210},
-                "Phasmophobia": {"hours": 226}
-            }
-        }
+    "bigmonraph": {
+        "rank": 3861,
+        "minutes_streamed": 4858,
+        "avg_viewers": 638,
+        "max_viewers": 7564,
+        "hours_watched": 51648,
+        "followers": 7374,
+        "followers_total": 31546
     }
 }
