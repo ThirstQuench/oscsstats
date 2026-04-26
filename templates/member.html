@@ -1,79 +1,49 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="mb-12">
-    <a href="/" class="group text-zinc-600 hover:text-purple-500 transition-all text-[10px] uppercase tracking-[0.3em] font-bold flex items-center italic">
-        <span class="mr-2 transition-transform group-hover:-translate-x-1">←</span> Return to Roster
-    </a>
-</div>
+<div class="max-w-4xl mx-auto">
 
-<section class="mb-16">
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-        <div class="overflow-visible">
-            <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-6">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-zinc-200 to-zinc-600">
-                    {{ name }}&nbsp;
-                </span>
-            </h1>
-            <p class="text-purple-600 font-mono text-[10px] tracking-[0.4em] uppercase font-bold italic">OSCS Internal Profile // Access Granted</p>
-        </div>
+    <header class="mb-12">
+        <a href="/" class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold hover:text-white transition-colors mb-4 inline-block">&larr; Return to Roster</a>
+        <h1 class="text-5xl font-black uppercase tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500">
+            {{ name }}
+        </h1>
+    </header>
 
-        <div class="bg-zinc-900/20 border border-zinc-800 p-4 px-6 rounded-2xl flex items-center gap-4 shrink-0">
-            <div class="h-2 w-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_#22c55e]"></div>
-            <span class="text-[9px] uppercase tracking-[0.2em] text-zinc-500 font-black italic">Link Status: Stable</span>
-        </div>
-    </div>
-</section>
+    <div class="bg-zinc-950/50 border border-zinc-900 rounded-[2.5rem] p-8 flex flex-col mb-20 shadow-2xl relative overflow-hidden">
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-    <div class="oscs-card p-10 rounded-3xl text-center md:text-left">
-        <h4 class="text-zinc-600 text-[9px] uppercase tracking-[0.3em] font-black mb-4 font-bold italic">Global Rank</h4>
-        <p class="text-4xl font-black font-mono tracking-tighter italic">#{{ "{:,}".format(info.get('rank', 0)) if info.get('rank') else '0' }}</p>
-    </div>
-    <div class="oscs-card p-10 rounded-3xl text-center md:text-left">
-        <h4 class="text-zinc-600 text-[9px] uppercase tracking-[0.3em] font-black mb-4 font-bold italic">Peak Viewers</h4>
-        <p class="text-4xl font-black font-mono tracking-tighter text-purple-500 italic">{{ "{:,}".format(info.get('max_viewers', 0)) if info.get('max_viewers') else '0' }}</p>
-    </div>
-    <div class="oscs-card p-10 rounded-3xl text-center md:text-left">
-        <h4 class="text-zinc-600 text-[9px] uppercase tracking-[0.3em] font-black mb-4 font-bold italic">Hours Watched</h4>
-        <p class="text-4xl font-black font-mono tracking-tighter text-zinc-100 italic">{{ "{:,}".format((info.get('hours_watched', 0)) | int) if info.get('hours_watched') else '0' }}</p>
-    </div>
-    <div class="oscs-card p-10 rounded-3xl text-center md:text-left">
-        <h4 class="text-zinc-600 text-[9px] uppercase tracking-[0.3em] font-black mb-4 font-bold italic">Total Followers</h4>
-        <p class="text-4xl font-black font-mono tracking-tighter text-green-500 italic">{{ "{:,}".format(info.get('followers_total', 0)) if info.get('followers_total') else '0' }}</p>
-    </div>
-</div>
+        <div class="absolute -inset-2 bg-purple-500/5 blur-3xl -z-10 pointer-events-none"></div>
 
-<div class="bg-zinc-950/50 border border-zinc-900 rounded-[2.5rem] p-8 flex flex-col mb-20">
-    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 px-2">
-        <div>
-            <h3 class="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500 italic">Broadcast Uplink // Live & Archive</h3>
-        </div>
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 px-2">
+            <div>
+                <h3 class="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500 italic">Broadcast Uplink // Live & Archive</h3>
+            </div>
 
-        <div class="flex flex-wrap items-center gap-4">
-            <a href="https://twitter.com/{{ twitter_handle }}" target="_blank" rel="noopener noreferrer"
-               class="flex items-center gap-2 px-4 py-2 bg-black border border-zinc-800 hover:border-zinc-500 rounded-full transition-all group">
-                <svg viewBox="0 0 24 24" class="w-3 h-3 fill-zinc-500 group-hover:fill-white transition-colors" aria-hidden="true">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-                </svg>
-                <span class="text-[9px] font-mono text-zinc-500 group-hover:text-white uppercase tracking-widest transition-colors">@{{ twitter_handle }}</span>
-            </a>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="https://twitter.com/{{ twitter_handle }}" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 px-4 py-2 bg-black border border-zinc-800 hover:border-zinc-500 rounded-full transition-all group z-10">
+                    <svg viewBox="0 0 24 24" class="w-3 h-3 fill-zinc-500 group-hover:fill-white transition-colors" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                    </svg>
+                    <span class="text-[9px] font-mono text-zinc-500 group-hover:text-white uppercase tracking-widest transition-colors">@{{ twitter_handle }}</span>
+                </a>
 
-            <div class="flex items-center gap-2 px-3 py-2 bg-purple-900/10 border border-purple-500/20 rounded-full">
-                <span class="w-1.5 h-1.5 bg-purple-500 rounded-full animate-pulse shadow-[0_0_8px_#a855f7]"></span>
-                <span class="text-[9px] text-purple-400 font-mono tracking-widest uppercase font-bold">Player Ready</span>
+                <div class="flex items-center gap-2 px-3 py-2 bg-purple-900/10 border border-purple-500/20 rounded-full">
+                    <span class="w-1.5 h-1.5 bg-purple-500 rounded-full animate-pulse shadow-[0_0_8px_#a855f7]"></span>
+                    <span class="text-[9px] text-purple-400 font-mono tracking-widest uppercase font-bold">Player Ready</span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="w-full aspect-video rounded-2xl overflow-hidden border border-zinc-800 bg-black relative shadow-2xl">
-        <iframe
-            src="https://player.twitch.tv/?channel={{ username }}&parent=localhost&parent=127.0.0.1&parent=YOURDOMAIN.com&parent=www.YOURDOMAIN.com"
-            class="absolute inset-0 w-full h-full"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen="true">
-        </iframe>
+        <div class="w-full aspect-video rounded-2xl overflow-hidden border border-zinc-800 bg-black relative shadow-2xl z-10">
+            <iframe
+                src="https://player.twitch.tv/?channel={{ name }}&parent=localhost&parent=127.0.0.1&parent=oscsstats.com&parent=www.oscsstats.com"
+                class="absolute inset-0 w-full h-full"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen="allowfullscreen">
+            </iframe>
+        </div>
     </div>
 </div>
 {% endblock %}

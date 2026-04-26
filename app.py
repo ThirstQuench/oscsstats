@@ -5,43 +5,31 @@ import os
 app = Flask(__name__)
 
 # ==========================================
-# OSCS ROSTER MASTER DIRECTORY
+# X / TWITTER OVERRIDES
 # ==========================================
-# Keys on the left MUST match your fetcher.py and stats.json exactly.
+# By default, the app assumes their Twitter is the exact same as their Twitch.
+# ONLY put names in this list if their Twitter handle is different.
+# Format: "lowercase_twitch_name": "Actual_Twitter_Handle"
 
-TWITTER_HANDLES = {
-    "sunny": "sunnysirl",
-    "santi": "santipulgaz",
-    "ybg": "YOUNGBASEDG",
-    "arky": "ArkySZNN",
-    "yugi": "yugi2x",
-    "nosiiree": "Nosiiree",
-    "jdab": "1JDAB1",
-    "redify": "redifyys",
-    "bigmonraph": "BigMonRaph"
-}
-
-YOUTUBE_CHANNELS = {
-    # "sunny": "youtube_id_here"
+TWITTER_OVERRIDES = {
+    # "exampletwitch": "ExampleTwitter"
 }
 
 
 def load_stats():
-    """Safely load the stats.json file."""
     try:
         with open('stats.json', 'r') as file:
             return json.load(file)
     except FileNotFoundError:
-        print("Warning: stats.json not found. Returning empty dataset.")
+        print("Warning: stats.json not found.")
         return {}
     except json.JSONDecodeError:
-        print("Error: stats.json is corrupted or not valid JSON.")
+        print("Error: stats.json is corrupted.")
         return {}
 
 
 @app.route('/')
 def index():
-    """Render the homepage dashboard."""
     members_data = load_stats()
     roster = list(members_data.keys())
     return render_template('index.html', roster=roster, members=members_data)
@@ -49,7 +37,6 @@ def index():
 
 @app.route('/member/<username>')
 def member_profile(username):
-    """Render the individual member profile page."""
     members_data = load_stats()
 
     if username not in members_data:
@@ -57,18 +44,14 @@ def member_profile(username):
 
     member_info = members_data[username]
 
-    # Look up the correct social handles
-    lookup_key = username.lower()
-    actual_twitter = TWITTER_HANDLES.get(lookup_key, username)
-    actual_youtube = YOUTUBE_CHANNELS.get(lookup_key, "")
+    # Check if they have a different Twitter name. If not, just use their Twitch name.
+    twitter_handle = TWITTER_OVERRIDES.get(username.lower(), username)
 
     return render_template(
         'member.html',
-        name=username,
-        username=username,
-        info=member_info,
-        twitter_handle=actual_twitter,
-        youtube_handle=actual_youtube
+        name=username,  # The master Twitch name
+        twitter_handle=twitter_handle,  # The specific X/Twitter link
+        info=member_info
     )
 
 
