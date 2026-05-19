@@ -1,83 +1,83 @@
 {
     "sunnys": {
-        "rank": 1443,
-        "minutes_streamed": 8087,
-        "avg_viewers": 1119,
-        "max_viewers": 3277,
-        "hours_watched": 150818,
-        "followers": 4695,
-        "followers_total": 120631
+        "rank": 1185,
+        "minutes_streamed": 13051,
+        "avg_viewers": 1053,
+        "max_viewers": 3110,
+        "hours_watched": 228990,
+        "followers": 4972,
+        "followers_total": 124487
     },
     "santipulgaz": {
-        "rank": 1307,
-        "minutes_streamed": 7151,
-        "avg_viewers": 1350,
-        "max_viewers": 4996,
-        "hours_watched": 160861,
-        "followers": 3343,
-        "followers_total": 60665
+        "rank": 1128,
+        "minutes_streamed": 10924,
+        "avg_viewers": 1247,
+        "max_viewers": 7884,
+        "hours_watched": 226983,
+        "followers": 9263,
+        "followers_total": 69053
     },
     "youngbasedgo": {
-        "rank": 1329,
-        "minutes_streamed": 9792,
-        "avg_viewers": 1010,
-        "max_viewers": 8430,
-        "hours_watched": 164755,
-        "followers": 5695,
-        "followers_total": 65537
+        "rank": 1078,
+        "minutes_streamed": 35902,
+        "avg_viewers": 500,
+        "max_viewers": 2891,
+        "hours_watched": 299204,
+        "followers": 1949,
+        "followers_total": 66666
     },
     "arky": {
-        "rank": 122,
-        "minutes_streamed": 13417,
-        "avg_viewers": 5102,
-        "max_viewers": 12070,
-        "hours_watched": 1140888,
-        "followers": 9917,
-        "followers_total": 442106
+        "rank": 193,
+        "minutes_streamed": 14357,
+        "avg_viewers": 4701,
+        "max_viewers": 16928,
+        "hours_watched": 1124818,
+        "followers": 11174,
+        "followers_total": 451791
     },
     "yugi2x": {
-        "rank": 219,
-        "minutes_streamed": 15075,
-        "avg_viewers": 3061,
-        "max_viewers": 9925,
-        "hours_watched": 769078,
-        "followers": 6655,
-        "followers_total": 286069
+        "rank": 208,
+        "minutes_streamed": 17025,
+        "avg_viewers": 3862,
+        "max_viewers": 16671,
+        "hours_watched": 1095932,
+        "followers": 10168,
+        "followers_total": 294781
     },
     "nosiiree": {
-        "rank": 3542,
-        "minutes_streamed": 7972,
-        "avg_viewers": 459,
-        "max_viewers": 2699,
-        "hours_watched": 61002,
-        "followers": 1605,
-        "followers_total": 66122
+        "rank": 5473,
+        "minutes_streamed": 7245,
+        "avg_viewers": 373,
+        "max_viewers": 2438,
+        "hours_watched": 45028,
+        "followers": 656,
+        "followers_total": 66671
     },
     "1jdab1": {
-        "rank": 2716,
-        "minutes_streamed": 8924,
-        "avg_viewers": 544,
+        "rank": 3312,
+        "minutes_streamed": 7267,
+        "avg_viewers": 625,
         "max_viewers": 5641,
-        "hours_watched": 80925,
-        "followers": 2626,
-        "followers_total": 30488
+        "hours_watched": 75679,
+        "followers": 2568,
+        "followers_total": 32516
     },
     "redify": {
-        "rank": 2965,
-        "minutes_streamed": 9408,
-        "avg_viewers": 473,
-        "max_viewers": 2711,
-        "hours_watched": 74239,
-        "followers": 1920,
-        "followers_total": 47164
+        "rank": 6428,
+        "minutes_streamed": 11511,
+        "avg_viewers": 234,
+        "max_viewers": 1769,
+        "hours_watched": 44798,
+        "followers": 720,
+        "followers_total": 47796
     },
     "bigmonraph": {
-        "rank": 3861,
-        "minutes_streamed": 4858,
-        "avg_viewers": 638,
+        "rank": 2801,
+        "minutes_streamed": 4990,
+        "avg_viewers": 906,
         "max_viewers": 7564,
-        "hours_watched": 51648,
-        "followers": 7374,
-        "followers_total": 31546
+        "hours_watched": 75376,
+        "followers": 7001,
+        "followers_total": 33345
     }
 }
