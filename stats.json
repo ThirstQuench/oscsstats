@@ -1,6 +1,6 @@
 {
     "sunnys": {
-        "rank": 2642,
+        "rank": 2615,
         "minutes_streamed": 5579,
         "avg_viewers": 852,
         "max_viewers": 7157,
@@ -9,7 +9,7 @@
         "followers_total": 139879
     },
     "santipulgaz": {
-        "rank": 592,
+        "rank": 578,
         "minutes_streamed": 10689,
         "avg_viewers": 1980,
         "max_viewers": 4974,
@@ -18,7 +18,7 @@
         "followers_total": 101505
     },
     "youngbasedgo": {
-        "rank": 7288,
+        "rank": 7315,
         "minutes_streamed": 1491,
         "avg_viewers": 626,
         "max_viewers": 2782,
@@ -27,26 +27,26 @@
         "followers_total": 69888
     },
     "arky": {
-        "rank": 211,
-        "minutes_streamed": 13608,
-        "avg_viewers": 3846,
+        "rank": 215,
+        "minutes_streamed": 13249,
+        "avg_viewers": 3861,
         "max_viewers": 9424,
-        "hours_watched": 872177,
-        "followers": 9660,
-        "followers_total": 570928
+        "hours_watched": 852630,
+        "followers": 9290,
+        "followers_total": 571035
     },
     "yugi2x": {},
     "nosiiree": {
-        "rank": 7694,
-        "minutes_streamed": 5793,
-        "avg_viewers": 279,
-        "max_viewers": 2409,
-        "hours_watched": 26945,
-        "followers": 464,
-        "followers_total": 73615
+        "rank": 5769,
+        "minutes_streamed": 5767,
+        "avg_viewers": 379,
+        "max_viewers": 7872,
+        "hours_watched": 36380,
+        "followers": 690,
+        "followers_total": 73876
     },
     "1jdab1": {
-        "rank": 16516,
+        "rank": 16472,
         "minutes_streamed": 4107,
         "avg_viewers": 148,
         "max_viewers": 1067,
@@ -55,21 +55,21 @@
         "followers_total": 37121
     },
     "redify": {
-        "rank": 1200,
-        "minutes_streamed": 12257,
-        "avg_viewers": 965,
+        "rank": 1128,
+        "minutes_streamed": 12973,
+        "avg_viewers": 961,
         "max_viewers": 3367,
-        "hours_watched": 197150,
-        "followers": 3622,
-        "followers_total": 60903
+        "hours_watched": 207761,
+        "followers": 3667,
+        "followers_total": 60948
     },
     "bigmonraph": {
-        "rank": 6563,
-        "minutes_streamed": 3658,
-        "avg_viewers": 450,
+        "rank": 6287,
+        "minutes_streamed": 3573,
+        "avg_viewers": 475,
         "max_viewers": 4052,
-        "hours_watched": 27416,
-        "followers": 1253,
-        "followers_total": 42219
+        "hours_watched": 28283,
+        "followers": 1269,
+        "followers_total": 42276
     }
 }
